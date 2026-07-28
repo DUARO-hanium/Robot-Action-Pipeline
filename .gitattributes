@@ -1,0 +1,7 @@
+# 셸 스크립트는 WSL/Linux에서 실행되므로 항상 LF 유지
+# (Windows에서 checkout 시 CRLF로 바뀌면 bash가 \r 오류로 실패)
+*.sh text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
