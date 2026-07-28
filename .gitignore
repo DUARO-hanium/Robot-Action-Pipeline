@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# DUARO project-specific
+data/                       # lerobot-record 결과물 (수GB, 별도 위치 사용 권장)
+outputs/                    # lerobot-train 결과물
+*.pt                        # 학습 가중치
+*.pth
+*.safetensors
+*.mp4                       # 카메라 녹화 원본
+*.parquet                   # 관절 시계열 원본
