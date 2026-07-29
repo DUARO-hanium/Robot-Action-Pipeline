@@ -218,10 +218,17 @@ __marimo__/
 .streamlit/secrets.toml
 
 # DUARO project-specific
-data/                       # lerobot-record 결과물 (수GB, 별도 위치 사용 권장)
-outputs/                    # lerobot-train 결과물
-*.pt                        # 학습 가중치
+# (주의: gitignore는 줄 끝 인라인 주석 미지원 — 주석은 반드시 별도 줄에)
+
+# lerobot-record 결과물 (수GB) — 레포 안 data/가 표준 위치, 커밋만 차단
+data/
+# lerobot-train 결과물 (모델 체크포인트)
+outputs/
+# 학습 가중치
+*.pt
 *.pth
 *.safetensors
-*.mp4                       # 카메라 녹화 원본
-*.parquet                   # 관절 시계열 원본
+# 카메라 녹화 원본
+*.mp4
+# 관절 시계열 원본
+*.parquet
