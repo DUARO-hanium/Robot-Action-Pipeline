@@ -6,6 +6,10 @@
 
 **특히 재캘리 필수:** **그리퍼 교체 시.** DUARO는 커스텀 4절 평행 그리퍼(Follower)와 SSG48 소프트 그리퍼(Leader)로 교체했으므로 gripper min/max pulse가 기본값과 다름. 재캘리 없으면 덜 닫히거나 과폐가 발생.
 
+## 사전 준비 (매번)
+
+[settings.md](../../settings.md) "2. 매번 하는 것" — usbipd attach + `lerobot-find-port`로 포트 확인 (카메라 불필요).
+
 ## 실행
 
 **Follower:**
